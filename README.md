@@ -4,21 +4,22 @@ This is a 1v1 elo matchmaking system made with Laravel Queues and Laravel Horizo
 
 ## Installation
 
-First you'll need to clone the repo.
+ - Clone the repo.
 
-Then you'll need to copy `.env.example` to `.env` and fill in the mysql database and redis details.
+ - Copy the `.env.example` file to `.env` and fill in the database and redis information.
+ 
+ - Run `composer install` to install the dependencies.
 
-Then you'll need to run `composer install` to install the dependencies.
+ - Run `php artisan key:generate` to generate the application key.
 
-Then you'll need to run `php artisan migrate` to create the database tables.
+ - Run `php artisan migrate` to migrate the database. If the database doesn't exist, it'll create it.
 
-Then you'll need to run `php artisan horizon` to start the queue workers.
+## Running
 
-You'll also need to run `php artisan schedule:work` to start the scheduler.
-
-Then you'll need to run `php artisan serve` to start the web server. You'll need this to access /horizon.
-
-To add players to the queue you'll need to run `php artisan make:users {count} --fresh`. This will make the matchmaking users.
+ - Run `php artisan horizon` to start the horizon dashboard.
+ - Run `php artisan schedule:work` to start the scheduler.
+ - Run `php artisan check:counts` to start the count checker.
+ - Run `php artisan make:users {count}` to make the specified amount of users.
 
 ## Requirements
 
