@@ -1,5 +1,7 @@
 # 1v1 Elo Matchmaking via Laravel Horizon
 
+This is a 1v1 elo matchmaking system made with Laravel Queues and Laravel Horizon. It takes advantage of the queue system as well as the scheduling system. 
+
 ## Installation
 
 First you'll need to clone the repo.
