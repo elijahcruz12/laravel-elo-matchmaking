@@ -2,6 +2,13 @@
 
 This is a 1v1 elo matchmaking system made with Laravel Queues and Laravel Horizon. It takes advantage of the queue system as well as the scheduling system. 
 
+## Requirements
+
+- PHP 8.1+
+- Composer
+- MySQL
+- Redis
+
 ## Installation
 
  - Clone the repo.
@@ -20,12 +27,6 @@ This is a 1v1 elo matchmaking system made with Laravel Queues and Laravel Horizo
  - Run `php artisan schedule:work` to start the scheduler.
  - Run `php artisan check:counts` to start the count checker.
  - Run `php artisan make:users {count}` to make the specified amount of users.
-
-## Requirements
-
-- PHP 81+
-- MySQL
-- Redis
 
 ## How it works
 
