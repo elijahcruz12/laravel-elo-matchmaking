@@ -25,9 +25,9 @@ class StartMatchmaking implements ShouldQueue
      */
     public function handle(): void
     {
-        // Create InitMatchmaking jobs, delaying each one by 2 seconds for a total of 30 jobs
-        for ($i = 0; $i < 30; $i++) {
-            InitMatchmaking::dispatch()->onQueue('init')->delay(now()->addSeconds(2 * $i));
+        // Create InitMatchmaking jobs, delaying each one by 4 seconds for a total of 15 jobs
+        for ($i = 0; $i < 15; $i++) {
+            InitMatchmaking::dispatch()->onQueue('init')->delay(now()->addSeconds(4 * $i));
         }
     }
 }
